@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj": {}
+    "C:\\Users\\uk-dev\\Source\\Repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj": {
+    "C:\\Users\\uk-dev\\Source\\Repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
+        "projectUniqueName": "C:\\Users\\uk-dev\\Source\\Repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
         "projectName": "PlaceGroup-v1",
-        "projectPath": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
+        "projectPath": "C:\\Users\\uk-dev\\Source\\Repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
         "packagesPath": "C:\\Users\\uk-dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\obj\\",
+        "outputPath": "C:\\Users\\uk-dev\\Source\\Repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\uk-dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
