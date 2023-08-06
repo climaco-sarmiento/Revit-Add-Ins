@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N7EdSoiunszBjBFQxKqwD8BCer73wA+FyMkl1haPIoFe7VggZizhNz2UiqMf41mRWCSjWdJkm1KeIRMY1XxjNQ==",
+  "dgSpecHash": "fkKJUWnLe8s+fwKfVyjuCxfzL9NUhoVeTh3tcKEKLz9m7sT1TOJH5dgQDhfla60ypztd4wjzNpiGs2NDVrhY/A==",
   "success": true,
-  "projectFilePath": "/Users/Ubaid/Library/CloudStorage/OneDrive-UniversidadedoAlgarve/Revit-Add-Ins/exercises/PlaceGroup-v1/PlaceGroup-v1/PlaceGroup-v1.csproj",
+  "projectFilePath": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

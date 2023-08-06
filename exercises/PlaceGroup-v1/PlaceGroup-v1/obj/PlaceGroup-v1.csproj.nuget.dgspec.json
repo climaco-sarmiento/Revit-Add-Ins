@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Ubaid/Library/CloudStorage/OneDrive-UniversidadedoAlgarve/Revit-Add-Ins/exercises/PlaceGroup-v1/PlaceGroup-v1/PlaceGroup-v1.csproj": {}
+    "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj": {}
   },
   "projects": {
-    "/Users/Ubaid/Library/CloudStorage/OneDrive-UniversidadedoAlgarve/Revit-Add-Ins/exercises/PlaceGroup-v1/PlaceGroup-v1/PlaceGroup-v1.csproj": {
+    "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Ubaid/Library/CloudStorage/OneDrive-UniversidadedoAlgarve/Revit-Add-Ins/exercises/PlaceGroup-v1/PlaceGroup-v1/PlaceGroup-v1.csproj",
+        "projectUniqueName": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
         "projectName": "PlaceGroup-v1",
-        "projectPath": "/Users/Ubaid/Library/CloudStorage/OneDrive-UniversidadedoAlgarve/Revit-Add-Ins/exercises/PlaceGroup-v1/PlaceGroup-v1/PlaceGroup-v1.csproj",
-        "packagesPath": "/Users/Ubaid/.nuget/packages/",
-        "outputPath": "/Users/Ubaid/Library/CloudStorage/OneDrive-UniversidadedoAlgarve/Revit-Add-Ins/exercises/PlaceGroup-v1/PlaceGroup-v1/obj/",
+        "projectPath": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\PlaceGroup-v1.csproj",
+        "packagesPath": "C:\\Users\\uk-dev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uk-dev\\source\\repos\\Revit-Add-Ins\\exercises\\PlaceGroup-v1\\PlaceGroup-v1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Ubaid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\uk-dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
