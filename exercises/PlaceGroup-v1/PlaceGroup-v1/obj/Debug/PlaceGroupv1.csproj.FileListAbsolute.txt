@@ -1,0 +1,6 @@
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroup-v1\PlaceGroup-v1\bin\Debug\PlaceGroup-v1.dll
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroup-v1\PlaceGroup-v1\bin\Debug\PlaceGroup-v1.pdb
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroup-v1\PlaceGroup-v1\obj\Debug\PlaceGroupv1.csproj.AssemblyReference.cache
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroup-v1\PlaceGroup-v1\obj\Debug\PlaceGroupv1.csproj.CoreCompileInputs.cache
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroup-v1\PlaceGroup-v1\obj\Debug\PlaceGroup-v1.dll
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroup-v1\PlaceGroup-v1\obj\Debug\PlaceGroup-v1.pdb
