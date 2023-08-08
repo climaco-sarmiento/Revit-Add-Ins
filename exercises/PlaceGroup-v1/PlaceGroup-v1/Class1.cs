@@ -9,21 +9,20 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using Autodesk.Revit.DB.Architecture;
+
 namespace PlaceGroup_v1
 {
     [Transaction(TransactionMode.Manual)]
     [Regeneration(RegenerationOption.Manual)]
     public class Class1 : IExternalCommand
     {
-        public Result Execute(ExternalCommandData com
-            , ref string message, ElementSet elements)
+        public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             //Get application and document objects
-            UIApplication uiapp = ExternalCommandData.Application;
+            UIApplication uiapp = commandData.Application;
             Document doc = uiapp.ActiveUIDocument.Document;
 
-            //Define a referene Object to accept the pick result
-
+            //Define a reference Object to accept the pick result
             Reference pickedref = null;
 
             //Pick a group
@@ -32,8 +31,8 @@ namespace PlaceGroup_v1
             Element elem = doc.GetElement(pickedref);
             Group group = elem as Group;
 
-            //pick point
-            XYZ point = sel.PickPoint("Please pick a poiint to place group");
+            //Pick point
+            XYZ point = sel.PickPoint("Please pick a point to place group");
 
             //Place the group
             Transaction trans = new Transaction(doc);
