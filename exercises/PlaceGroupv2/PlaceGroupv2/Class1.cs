@@ -13,7 +13,7 @@ using static System.Net.Mime.MediaTypeNames;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-namespace PlaceGroupv1
+namespace PlaceGroupv2
 {
     [Transaction(TransactionMode.Manual)]
     [Regeneration(RegenerationOption.Manual)]
@@ -39,11 +39,24 @@ namespace PlaceGroupv1
 
             //Place the group
             Transaction trans = new Transaction(doc);
-            trans.Start("Lab");
+            trans.Start("ubd-PlaceGroup");
             doc.Create.PlaceGroup(point, group.GroupType);
             trans.Commit();
 
             return Result.Succeeded;
+        }
+    }
+    // Filter to constrain picking to model groups. Only model groups
+    // are highlighted and can be selected when cursor is hovering.
+    public class GroupPickFilter : ISelectionFilter
+    {
+        public bool AllowElement(Element e)
+        {
+            return (e.Category.Id.IntegerValue.Equals((int)BuiltInCategory.OST_IOSModelGroups));
+        }
+        public bool AllowReference(Reference r, XYZ p)
+        {
+            return false;
         }
     }
 }
