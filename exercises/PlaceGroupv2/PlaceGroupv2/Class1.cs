@@ -30,7 +30,8 @@ namespace PlaceGroupv2
 
             //Pick a group
             Selection sel = uiapp.ActiveUIDocument.Selection;
-            pickedref = sel.PickObject(ObjectType.Element, "Please select a group");
+            GroupPickFilter selFilter = new GroupPickFilter();
+            pickedRef = sel.PickObject(ObjectType.Element, selFilter, "Please select a group");
             Element elem = doc.GetElement(pickedref);
             Group group = elem as Group;
 
