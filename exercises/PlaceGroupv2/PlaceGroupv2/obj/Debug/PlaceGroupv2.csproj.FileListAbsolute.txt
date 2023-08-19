@@ -1,0 +1,2 @@
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroupv2\PlaceGroupv2\obj\Debug\PlaceGroupv2.csproj.AssemblyReference.cache
+C:\Users\uk-dev\source\repos\Revit-Add-Ins\exercises\PlaceGroupv2\PlaceGroupv2\obj\Debug\PlaceGroupv2.csproj.CoreCompileInputs.cache
