@@ -25,6 +25,22 @@ namespace PlaceGroupv2
             UIApplication uiapp = commandData.Application;
             Document doc = uiapp.ActiveUIDocument.Document;
 
+            try
+            {
+                //…Move most of code in Execute method to here.                             
+            }
+
+            //If the user right-clicks or presses Esc, handle the exception
+            catch (Autodesk.Revit.Exceptions.OperationCanceledException)
+            {
+                return Result.Cancelled;
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+                return Result.Failed;
+            }
+
             //Define a reference Object to accept the pick result
             Reference pickedref = null;
 
