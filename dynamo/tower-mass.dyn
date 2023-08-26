@@ -139,7 +139,7 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "WatchWidth": 200.0,
+      "WatchWidth": 80.0,
       "WatchHeight": 38.4,
       "Id": "25b71412358f47a7a053eee61049fabc",
       "NodeType": "ExtensionNode",
@@ -167,13 +167,89 @@
       ],
       "Replication": "Disabled",
       "Description": "Visualizes a node's output"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "WatchWidth": 49.6,
+      "WatchHeight": 38.4,
+      "Id": "3f813ed157c94246aa43fecaadbdbb3d",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "08a94323981446b9b0634accd7a0de21",
+          "Name": "",
+          "Description": "Node to show output from",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "96e56af24ce84e6ab01d40bf04f68485",
+          "Name": "",
+          "Description": "Node output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualizes a node's output"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
+      "NumberType": "Double",
+      "Id": "63b64f4f8ec44ac98e8b84cc9f47848c",
+      "NodeType": "NumberInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "7540bf631e164697b4a8c8b4da7d0f35",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a number",
+      "InputValue": 20.0
     }
   ],
   "Connectors": [
     {
+      "Start": "e8a437dc65d64f09b5cc42625dc6bee8",
+      "End": "08a94323981446b9b0634accd7a0de21",
+      "Id": "dfd28e0703604b57b8b49187fbf22d01",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "88f9c44a112f4948ba9e67dbc33f97d5",
+      "End": "b9a6d3e5049b4df1bb6458063b04207a",
+      "Id": "3d3b2b3c86284dc795ca114fc5a33e87",
+      "IsHidden": "False"
+    },
+    {
       "Start": "6a267fd721004063851326abc3312313",
       "End": "5b0ce05b5be442dab96fbfe18b3fbd37",
       "Id": "903dfa1660884d1597652a1955344200",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6a267fd721004063851326abc3312313",
+      "End": "f8cdc0eac9a5429ebbc4520529c3429c",
+      "Id": "5eb29dec9a084d88aec572a1cbe917a7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "7540bf631e164697b4a8c8b4da7d0f35",
+      "End": "05e7506eea764bedb1dc36903558dd66",
+      "Id": "a70af1d80e9446ea8651592c80ed6bf0",
       "IsHidden": "False"
     }
   ],
@@ -233,8 +309,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 755.19999999999982,
-        "Y": 505.60000000000014
+        "X": 466.39999999999986,
+        "Y": 442.40000000000003
       },
       {
         "Id": "1f4d42b7e21449199e2c603df31a6155",
@@ -275,11 +351,31 @@
         "ShowGeometry": true,
         "X": 686.40000000000009,
         "Y": 256.0
+      },
+      {
+        "Id": "3f813ed157c94246aa43fecaadbdbb3d",
+        "Name": "Watch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 839.99999999999989,
+        "Y": 470.4
+      },
+      {
+        "Id": "63b64f4f8ec44ac98e8b84cc9f47848c",
+        "Name": "Number",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 171.2000000000001,
+        "Y": 558.40000000000009
       }
     ],
     "Annotations": [],
-    "X": 0.0,
-    "Y": 0.0,
-    "Zoom": 1.0
+    "X": 4.5139500000000226,
+    "Y": 2.8129500000000007,
+    "Zoom": 0.992125
   }
 }
