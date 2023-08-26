@@ -88,36 +88,6 @@
       "Description": "Get Element's Parameter by Name\n\nParameter.ParameterByName (element: Element, name: string): Parameter"
     },
     {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "Id": "656699527fb942828bfb79bfdb8489e5",
-      "NodeType": "FunctionNode",
-      "Inputs": [
-        {
-          "Id": "307dd4c20d9c4519842bb8a6f2ffc275",
-          "Name": "element",
-          "Description": "Revit.Elements.Element",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "8868bcdbf55e4091a18fa3859cc9b9da",
-          "Name": "Parameter[]",
-          "Description": "Parameter[]",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "FunctionSignature": "Revit.Elements.Element.Parameters",
-      "Replication": "Auto",
-      "Description": "Obtain all of the Parameters from an Element, sorted by Name.\n\nElement.Parameters: Parameter[]"
-    },
-    {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
       "Id": "8c717f9639194502b1f35e5801d6c30e",
       "NodeType": "StringInputNode",
@@ -321,16 +291,6 @@
         "ShowGeometry": true,
         "X": 324.80000000000013,
         "Y": 238.39999999999992
-      },
-      {
-        "Id": "656699527fb942828bfb79bfdb8489e5",
-        "Name": "Element.Parameters",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "ShowGeometry": true,
-        "X": 273.59999999999997,
-        "Y": 39.199999999999974
       },
       {
         "Id": "8c717f9639194502b1f35e5801d6c30e",
