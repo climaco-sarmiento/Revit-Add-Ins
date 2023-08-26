@@ -47,6 +47,54 @@
       "FunctionSignature": "Revit.Elements.Parameter.SetValue@Revit.Elements.Parameter,var",
       "Replication": "Auto",
       "Description": "Set the value of the parameter\n\nParameter.SetValue (parameter: Parameter, value: var): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "a9498bb1752e4f9898971bf7d81b3aa7",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "87b835be2a2f4c0fb4a95b9d24ceac5f",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8ca5e0c774ba4609b407acc07d6d932a",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "88908f34d10d4ef7a49d3d487845fe30",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f7552f95c14048f1a859a60ae43ae979",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Replication": "Auto",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
     }
   ],
   "Connectors": [],
@@ -108,6 +156,16 @@
         "ShowGeometry": true,
         "X": 619.2,
         "Y": 403.2
+      },
+      {
+        "Id": "a9498bb1752e4f9898971bf7d81b3aa7",
+        "Name": "Point.ByCoordinates",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 407.2000000000001,
+        "Y": 162.39999999999998
       }
     ],
     "Annotations": [],
