@@ -189,6 +189,27 @@
       "Replication": "Disabled",
       "Description": "Creates a number",
       "InputValue": 20.0
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.GroupTypes, DSRevitNodesUI",
+      "SelectedIndex": -1,
+      "SelectedString": "",
+      "Id": "2ebf2838266e4e8fa1f3addbae64e539",
+      "NodeType": "ExtensionNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "96e42797f64940d1b5c61d84f4ba26f2",
+          "Name": "GroupType",
+          "Description": "The selected GroupType",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a Group Type."
     }
   ],
   "Connectors": [
@@ -331,6 +352,16 @@
         "ShowGeometry": true,
         "X": 171.2000000000001,
         "Y": 558.40000000000009
+      },
+      {
+        "Id": "2ebf2838266e4e8fa1f3addbae64e539",
+        "Name": "Group Types",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 403.05384906135816,
+        "Y": 67.714048129015993
       }
     ],
     "Annotations": [],
