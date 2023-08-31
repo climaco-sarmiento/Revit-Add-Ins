@@ -148,13 +148,160 @@
       ],
       "Replication": "Disabled",
       "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "8044de6d523341e4a68d2fb4a9b8abcf",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "c57cf7b0540a47e5b537d00cd34e17bd",
+          "Name": "grid",
+          "Description": "Revit.Elements.Grid",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "844c5941ed1542b0b5a3c8e898a7b2a3",
+          "Name": "Curve",
+          "Description": "Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Revit.Elements.Grid.Curve",
+      "Replication": "Auto",
+      "Description": "Get the underlying Curve geometry from this Element\n\nGrid.Curve: Curve"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "3242968a343348cabe00baacdeacc7ba",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "fa475d6d5f634854aa3c1062d9330cab",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "eaa75e3ba0424ccf951bd75097640a3f",
+          "Name": "other",
+          "Description": "Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1983b69aa63d434191ef9dfc2802ab6b",
+          "Name": "Geometry[]",
+          "Description": "Geometry[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.Intersect@Autodesk.DesignScript.Geometry.Geometry",
+      "Replication": "Auto",
+      "Description": "Get the intersection Geometry for this object and another\n\nGeometry.Intersect (other: Geometry): Geometry[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "c205a870b5b04e3096945442188146ca",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "9a365c9feecd4f73844738bb9287de5e",
+          "Name": "list",
+          "Description": "List to filter.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1d609f1f62d44d66af1b88aaaefccac2",
+          "Name": "mask",
+          "Description": "List of booleans representing a mask.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1eca4d38989e48c78298e910e4040068",
+          "Name": "in",
+          "Description": "Items whose mask index is true.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "37e75c4f472744bd8ea800389e703989",
+          "Name": "out",
+          "Description": "Items whose mask index is false.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "DSCore.List.FilterByBoolMask@var[]..[],var[]..[]",
+      "Replication": "Auto",
+      "Description": "Filters a sequence by looking up corresponding indices in a separate list of booleans.\n\nList.FilterByBoolMask (list: var[]..[], mask: var[]..[]): var[]..[]"
     }
   ],
   "Connectors": [
     {
+      "Start": "551bfe9cc83c4ff88949c9ac8bad3364",
+      "End": "9f391067d3ee4eef8edd81011d11a4da",
+      "Id": "401fa9e43f794478a1e36364b98084c9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "c2c1f917ad6d4a4ab402326fe7847ff4",
+      "End": "c6926c8625c2421d99a6c6ba6d71c8f8",
+      "Id": "0438c6212d314929b4a40273157b7433",
+      "IsHidden": "False"
+    },
+    {
       "Start": "208b83ad76a4413c9ef38dda784c4dfe",
       "End": "9cc72506b5554f3ab4dfa9b692a196a5",
       "Id": "1ffb1309bb7a403497ca6e306ec38e45",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "43015825a2554bf18c35a601661a24c6",
+      "End": "c57cf7b0540a47e5b537d00cd34e17bd",
+      "Id": "22d1f95cd9074d80ad264fef07e50d2c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "844c5941ed1542b0b5a3c8e898a7b2a3",
+      "End": "fa475d6d5f634854aa3c1062d9330cab",
+      "Id": "231625e6ae1f443fb8b04903b8ac5468",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "844c5941ed1542b0b5a3c8e898a7b2a3",
+      "End": "eaa75e3ba0424ccf951bd75097640a3f",
+      "Id": "6882ed5f748745e8a0b081d9c46dd899",
       "IsHidden": "False"
     }
   ],
@@ -214,8 +361,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": -14.501357311060815,
-        "Y": 78.971110840973083
+        "X": 69.197118746970659,
+        "Y": -3.3988179780419756
       },
       {
         "Id": "0637db6af0364ba79a9f3814eaf0cfc3",
@@ -234,8 +381,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": 55.348420682591211,
-        "Y": 510.11206952842997
+        "X": 253.30195929603059,
+        "Y": 553.95412841597033
       },
       {
         "Id": "e7e70ac0f91448c0933933783b038f62",
@@ -244,8 +391,8 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": -341.1368395043886,
-        "Y": 269.1910680601145
+        "X": -566.98987013717158,
+        "Y": 51.309320861429626
       },
       {
         "Id": "6be59e2b015042a380d5b347e9966edb",
@@ -254,13 +401,43 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "ShowGeometry": true,
-        "X": -81.5985075939322,
-        "Y": 276.79433255395168
+        "X": -327.37974681196107,
+        "Y": 185.12457306182205
+      },
+      {
+        "Id": "8044de6d523341e4a68d2fb4a9b8abcf",
+        "Name": "Grid.Curve",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -289.1493630112094,
+        "Y": 376.85638938847126
+      },
+      {
+        "Id": "3242968a343348cabe00baacdeacc7ba",
+        "Name": "Geometry.Intersect",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -317.04885503055334,
+        "Y": 529.63932187535374
+      },
+      {
+        "Id": "c205a870b5b04e3096945442188146ca",
+        "Name": "List.FilterByBoolMask",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -26.097009685967919,
+        "Y": 336.99997221798003
       }
     ],
     "Annotations": [],
-    "X": 243.33898273883983,
-    "Y": 54.110506966519807,
-    "Zoom": 0.67531615774592946
+    "X": 358.80653946683634,
+    "Y": 92.963515724434956,
+    "Zoom": 0.60216150130446489
   }
 }
