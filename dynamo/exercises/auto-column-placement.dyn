@@ -430,6 +430,53 @@
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly",
       "Code": "0;\n5;"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.HigherOrder.Filter, CoreNodeModels",
+      "Id": "4cdccad0b586461a90eaf82e65367458",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "6ebdd252a9c34704ab875c0b9cee23a2",
+          "Name": "list",
+          "Description": "List to filter",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "88e845578f994b77944a61a3eae32bcd",
+          "Name": "condition",
+          "Description": "Filter function used to determine if an element is filtered in or out",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bf0b40b8373a4e5a868b52df17de14ae",
+          "Name": "in",
+          "Description": "List containing all elements \"x\" where condition(x) = True",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "107fb0011b9449d29bcf604ba3680610",
+          "Name": "out",
+          "Description": "List containing all elements \"x\" where condition(x) = False",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Filters items on a list in or out based on the given condition. If the condition is true, items are filtered in, and if the condition is false, items are filtered out."
     }
   ],
   "Connectors": [
@@ -709,6 +756,16 @@
         "ShowGeometry": true,
         "X": -404.16323109322286,
         "Y": 890.27150817811707
+      },
+      {
+        "Id": "4cdccad0b586461a90eaf82e65367458",
+        "Name": "List.Filter",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 88.648330349532557,
+        "Y": 530.04376935786422
       }
     ],
     "Annotations": [],
