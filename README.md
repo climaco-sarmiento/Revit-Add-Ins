@@ -1,6 +1,6 @@
 # Revit Add-Ins - Learning C# and .NET Framework, utilizing Revit API
 
-I have started learning C# and .NET framework, for the purpose of developing add-ins for Revit. This repo is where these exericeses are placed.
+C# and .NET framework practice repo
 
 ## Author
 
